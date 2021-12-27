@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+            width: 600px;
+            height: 500px;
+            padding: 5px;
+            border: 5px solid #333;
+            margin: 30 auto;
+            /* box-sizing: border-box; */
+            display: flex;
+            /* flex-direction: row; //untuk ngatur arah dan urutan didalam kontainer */
+            /* flex-wrap: wrap-reverse; //untuk mengatur ketika elemen tidak muat dalam baris. supaya turun kebawah */
+            justify-content: center;
+            align-items: baseline;
+        }
+        
+        .container div {
+            background-color: blue;
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .container div.dua {
+            font-size: 100px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div class="dua">2</div>
+        <!-- <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div> -->
+    </div>
+</body>
+
+</html>

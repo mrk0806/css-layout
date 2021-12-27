@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .navbar{
+            position: fixed;
+            background-color: lightpink;
+            height: 40px;
+            left: 0;
+            right: 0;
+            z-index: 99999;
+           top: 0;
+        }
+        .container{
+            margin: 50px 10px;
+            /* padding: 10px; */
+            position: relative;
+        }
+        /* .right{position: relative;} */
+        body{margin: 0;padding: 0;font-family: Arial, Helvetica, sans-serif;}
+        .right{width: 1000px;float: right;height: 800px;background-color: lightgreen;}
+        .left{width: 300px; float: left;height: 800px;background-color: lightcoral;}
+        ul{margin-top: 50px;}
+        ul li {padding: 20px; display: inline; }
+        .left ul li {padding: 20px; display: block !important;margin-top: 0;} 
+        ul li a { text-decoration: none; padding: 14px 25px;color: white; background-color: red; border: 2px solid white;border-radius: 20px;}
+        a:hover{background-color: white; color: red;}
+        .kotak{width: 100px; height: 100px;}
+        .satu{background-color: tomato; }
+        .dua{background-color: lightpink;  position: absolute;top: 0;left: 0;}
+        .tiga{background-color: lightblue; }
+    </style>
+</head>
+<body>
+    <div class="navbar"></div>
+    <div class="container">
+        <div class="right">
+            <ul>
+                <li><a href="">Link1</a></li>
+                <li><a href="">Link2</a></li>
+                <li><a href="">Link3</a></li>
+                <li><a href="">Link4</a></li>
+                <li><a href="">Link5</a></li>
+            </ul>
+            <div class="kotak satu"></div>
+            <div class="kotak dua"></div>
+            <div class="kotak tiga"></div>
+        </div>
+        <div class="left">
+            <ul>
+                <li><a href="">Link1</a></li>
+                <li><a href="">Link2</a></li>
+                <li><a href="">Link3</a></li>
+                <li><a href="">Link4</a></li>
+                <li><a href="">Link5</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
